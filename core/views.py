@@ -1,0 +1,8 @@
+from django.http import JsonResponse
+
+def health_check(request):
+    return JsonResponse({
+        "status": "ok",
+        "service": "AI SOC AND GOVERNANCE API",
+        "version": "0.1.0"
+    })
